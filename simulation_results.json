@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-11-24T19:03:00.8268377Z",
+  "scenarios": [
+    {
+      "name": "Scenario A (20% Ans, 120s Talk)",
+      "answer_rate": 0.2,
+      "talk_time_sec": 0,
+      "progressive": {
+        "mode": "PROGRESSIVE",
+        "calls_initiated": 80,
+        "calls_connected": 9,
+        "abandoned_calls": 71,
+        "abandonment_pct": 0,
+        "agent_util_pct": 25.2,
+        "approve_count": 39,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 0
+      },
+      "predictive": {
+        "mode": "PREDICTIVE",
+        "calls_initiated": 75,
+        "calls_connected": 18,
+        "abandoned_calls": 56,
+        "abandonment_pct": 2.5,
+        "agent_util_pct": 64.8,
+        "approve_count": 5,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 32
+      }
+    },
+    {
+      "name": "Scenario B (50% Ans, 90s Talk)",
+      "answer_rate": 0.5,
+      "talk_time_sec": 0,
+      "progressive": {
+        "mode": "PROGRESSIVE",
+        "calls_initiated": 41,
+        "calls_connected": 20,
+        "abandoned_calls": 21,
+        "abandonment_pct": 0,
+        "agent_util_pct": 56,
+        "approve_count": 32,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 0
+      },
+      "predictive": {
+        "mode": "PREDICTIVE",
+        "calls_initiated": 44,
+        "calls_connected": 20,
+        "abandoned_calls": 24,
+        "abandonment_pct": 2.5,
+        "agent_util_pct": 72,
+        "approve_count": 4,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 25
+      }
+    },
+    {
+      "name": "Scenario C (70% Ans, 180s Talk)",
+      "answer_rate": 0.7,
+      "talk_time_sec": 0,
+      "progressive": {
+        "mode": "PROGRESSIVE",
+        "calls_initiated": 28,
+        "calls_connected": 20,
+        "abandoned_calls": 9,
+        "abandonment_pct": 0,
+        "agent_util_pct": 56,
+        "approve_count": 12,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 0
+      },
+      "predictive": {
+        "mode": "PREDICTIVE",
+        "calls_initiated": 30,
+        "calls_connected": 20,
+        "abandoned_calls": 10,
+        "abandonment_pct": 2.5,
+        "agent_util_pct": 72,
+        "approve_count": 4,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 8
+      }
+    },
+    {
+      "name": "Scenario D (Dynamic 70% -\u003e 10% Shock)",
+      "answer_rate": 0.7,
+      "talk_time_sec": 0,
+      "progressive": {
+        "mode": "PROGRESSIVE",
+        "calls_initiated": 27,
+        "calls_connected": 20,
+        "abandoned_calls": 7,
+        "abandonment_pct": 0,
+        "agent_util_pct": 56,
+        "approve_count": 12,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 0
+      },
+      "predictive": {
+        "mode": "PREDICTIVE",
+        "calls_initiated": 31,
+        "calls_connected": 20,
+        "abandoned_calls": 21,
+        "abandonment_pct": 2.5,
+        "agent_util_pct": 72,
+        "approve_count": 4,
+        "reduce_count": 0,
+        "reject_count": 0,
+        "fallback_count": 20
+      }
+    }
+  ],
+  "scenario_d_timeline": [
+    {
+      "seconds": 0.3,
+      "answer_rate_pct": 70,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PREDICTIVE"
+    },
+    {
+      "seconds": 0.5,
+      "answer_rate_pct": 70,
+      "ringing_calls": 9,
+      "connected": 0,
+      "mode": "PREDICTIVE"
+    },
+    {
+      "seconds": 0.8,
+      "answer_rate_pct": 70,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PREDICTIVE"
+    },
+    {
+      "seconds": 1,
+      "answer_rate_pct": 70,
+      "ringing_calls": 8,
+      "connected": 0,
+      "mode": "PREDICTIVE"
+    },
+    {
+      "seconds": 1.3,
+      "answer_rate_pct": 70,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PREDICTIVE"
+    },
+    {
+      "seconds": 1.5,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK",
+      "event": "SAFETY TRIGGER: FALLBACK_TO_PROGRESSIVE"
+    },
+    {
+      "seconds": 1.8,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK",
+      "event": "SAFETY TRIGGER: FALLBACK_TO_PROGRESSIVE"
+    },
+    {
+      "seconds": 2,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK"
+    },
+    {
+      "seconds": 2.3,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK"
+    },
+    {
+      "seconds": 2.5,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK"
+    },
+    {
+      "seconds": 2.8,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK"
+    },
+    {
+      "seconds": 3,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK"
+    },
+    {
+      "seconds": 3.3,
+      "answer_rate_pct": 10,
+      "ringing_calls": 0,
+      "connected": 0,
+      "mode": "PROGRESSIVE_FALLBACK"
+    }
+  ],
+  "failure_cases": [
+    {
+      "id": 1,
+      "name": "Worker Crash Mid-Call Setup",
+      "passed": true,
+      "description": "Worker dies after reserving agent \u0026 borrower; Reaper reconciles stuck call, restores agent to AVAILABLE, and reschedules borrower with backoff.",
+      "event_trace": "Call: FAILED -\u003e FAILED | Agent: AVAILABLE -\u003e AVAILABLE (leased: false) | Borrower: PENDING -\u003e PENDING (Retry: 1)"
+    },
+    {
+      "id": 2,
+      "name": "Provider Outage Circuit Breaker",
+      "passed": true,
+      "description": "Carrier error rate exceeds 25% threshold; Safety Controller activates circuit breaker, rejecting predictive bursts and falling back to progressive.",
+      "event_trace": "Carrier Error Rate: 35.0% (\u003e25%) -\u003e Circuit Breaker: FALLBACK_TO_PROGRESSIVE -\u003e Fallback Approved: 8 calls"
+    },
+    {
+      "id": 3,
+      "name": "Sudden Agent Drop Guard",
+      "passed": true,
+      "description": "\u003e20% of agents log off within 5 seconds; Safety Controller rejects all new predictive dial bursts, protecting remaining agents from an answer flood.",
+      "event_trace": "Agent Drop Rate: 40.0% (\u003e20%) -\u003e Sudden Drop Guard: REJECT -\u003e Approved: 0 calls"
+    },
+    {
+      "id": 4,
+      "name": "Duplicate Events Idempotency",
+      "passed": true,
+      "description": "Carrier delivers duplicate webhooks with identical provider_event_id; PostgreSQL ON CONFLICT DO NOTHING suppresses duplicates with 0 state corruption.",
+      "event_trace": "Event 1 err: \u003cnil\u003e | Event 2 (dup) err: \u003cnil\u003e | Event 3 (dup) err: \u003cnil\u003e | Rows inserted: 1"
+    },
+    {
+      "id": 5,
+      "name": "Out-of-Order Webhook Delivery",
+      "passed": true,
+      "description": "Carrier delivers COMPLETED before ANSWERED or RINGING; monotonic rank ordering guarantees terminal states never regress to active states.",
+      "event_trace": "Event 1 (COMPLETED): state=COMPLETED | Event 2 (Late ANSWERED): state=COMPLETED | Event 3 (Late RINGING): state=COMPLETED"
+    }
+  ],
+  "load_test": {
+    "double_allocations": 0,
+    "levels": [
+      {
+        "workers": 100,
+        "successful_reservations": 100,
+        "double_allocations": 0,
+        "throughput_rps": 194.5,
+        "total_duration_ms": 514,
+        "p50_ms": 401.9,
+        "p95_ms": 493.6,
+        "p99_ms": 508.2
+      },
+      {
+        "workers": 500,
+        "successful_reservations": 500,
+        "double_allocations": 0,
+        "throughput_rps": 567.3,
+        "total_duration_ms": 881,
+        "p50_ms": 535.6,
+        "p95_ms": 865.7,
+        "p99_ms": 876
+      },
+      {
+        "workers": 1000,
+        "successful_reservations": 1000,
+        "double_allocations": 0,
+        "throughput_rps": 452.8,
+        "total_duration_ms": 2208,
+        "p50_ms": 1063.5,
+        "p95_ms": 2146.4,
+        "p99_ms": 2192.8
+      }
+    ],
+    "p99_latency": "2192.76ms"
+  }
+}
